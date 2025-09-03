@@ -7,15 +7,15 @@ In this session, you will learn about the fundamentals of LangGraph through one 
 
 ## Pre-work
 
-### Clone the LangSmith Workshops repo
+### Clone the LangSmith Agent Building repo
 ```
-git clone https://github.com/langchain-ai/langsmith-workshops
+git clone https://github.com/xuro-langchain/langsmith-agent-building
 ```
 
 ### Create an environment and install dependencies  
 ```
 # Ensure you have a recent version of pip and python installed
-$ cd langsmith-in-code
+$ cd langsmith-agent-building
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 $ pip install -r requirements.txt
@@ -29,7 +29,9 @@ Make sure the following command works and opens the relevant notebooks
 $ jupyter notebook
 ```
 
-### Azure OpenAI Instructions
+### Using Other Models
+
+#### Azure OpenAI Instructions
 
 If you are using AzureOpenAI instead of OpenAI, there are a few things you need to do.
 
@@ -45,3 +47,9 @@ If you are using AzureOpenAI instead of OpenAI, there are a few things you need 
 3. Navigate to `utils.py` and use AzureOpenAIEmbeddings instead of OpenAIEmbeddings
 
 4. In the notebooks, use AzureOpenAI (code already provided in cells) where applicable, instead of OpenAI (default)
+
+#### Other Model Instructions
+
+Follow similar instructions as for Azure OpenAI - update environment variables, and navigate to `models.py` and `utils.py` to change the models being used.
+
+These steps may vary depending on the specific model you are choosing to use.
