@@ -1,0 +1,41 @@
+[project]
+name = "langsmith-agent-building"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "azure-identity>=1.25.0",
+    "chromadb>=1.0.21",
+    "dotenv>=0.9.9",
+    "fastapi>=0.116.1",
+    "ipython>=9.5.0",
+    "langchain-anthropic>=0.3.20",
+    "langchain-aws>=0.2.33",
+    "langchain-chroma>=0.2.6",
+    "langchain-community>=0.3.29",
+    "langchain-core>=0.3.76",
+    "langchain-experimental>=0.3.4",
+    "langchain-google-vertexai>=2.1.2",
+    "langchain-openai>=0.3.33",
+    "langgraph>=0.6.7",
+    "langgraph-checkpoint-sqlite>=2.0.11",
+    "langgraph-cli[inmem]>=0.4.2",
+    "langgraph-sdk>=0.2.7",
+    "langgraph-supervisor>=0.0.29",
+    "langsmith>=0.2.0",
+    "lxml>=6.0.1",
+    "notebook>=7.4.5",
+    "openai>=1.107.3",
+    "openevals>=0.1.0",
+    "pandas>=2.3.2",
+    "pip-system-certs>=5.2",
+    "protobuf>=3.20.3",
+    "pyarrow>=21.0.0",
+    "pyppeteer>=0.0.25",
+    "python-dotenv>=1.1.1",
+    "scikit-learn>=1.7.2",
+    "tavily-python>=0.7.12",
+    "uvicorn>=0.35.0",
+    "wikipedia>=1.4.0",
+]

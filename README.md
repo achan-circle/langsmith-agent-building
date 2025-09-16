@@ -9,47 +9,41 @@ In this session, you will learn about the fundamentals of LangGraph through one 
 
 ### Clone the LangSmith Agent Building repo
 ```
-git clone https://github.com/xuro-langchain/langsmith-agent-building
+git clone https://github.com/achan-langchain/langsmith-agent-building
+```
+
+### Install pip and python - skip if already installed
+
+Install through Kandji by searching for "Python 3", or use brew
+```
+# Install brew
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Install python
+$ brew install python
 ```
 
 ### Create an environment and install dependencies  
 ```
 # Ensure you have a recent version of pip and python installed
-$ cd langsmith-agent-building
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-$ pip install -r requirements.txt
+$ cd langsmith-in-code
+$ pip install uv
+$ uv sync
+$ uv venv
 ```
 
- Create a .env file in the root folder using ```.env.example``` as an example.
+Create a .env file in the root folder using ```.env.example``` as an example.
+### Create .env file
+```
+$ cp .env.example .env
+$ open .env
+```
+###
+1. fill in `LANGSMITH_ENDPOINT`, `LANGSMITH_API_KEY`, `OPENAI_BASE_URL`, and `OPENAI_API_KEY` as instructed.
 
-### Running notebooks
+## Running notebooks
 Make sure the following command works and opens the relevant notebooks
 ```
-$ jupyter notebook
+$ uv run jupyter notebook
 ```
 
-### Using Other Models
-
-#### Azure OpenAI Instructions
-
-If you are using AzureOpenAI instead of OpenAI, there are a few things you need to do.
-
-1. Set necessary environment variables in a .env file. Specifically, make sure you add the following to your .env file
-    - AZURE_OPENAI_API_KEY=
-    - AZURE_OPENAI_ENDPOINT=
-    - AZURE_OPENAI_API_VERSION=
-
-2. Navigate to `models.py`, and uncomment the code for 
-    - `AZURE_OPENAI_EMBEDDING_MODEL`= ...
-    - `AZURE_OPENAI_GPT_4O`= ...
-
-3. Navigate to `utils.py` and use AzureOpenAIEmbeddings instead of OpenAIEmbeddings
-
-4. In the notebooks, use AzureOpenAI (code already provided in cells) where applicable, instead of OpenAI (default)
-
-#### Other Model Instructions
-
-Follow similar instructions as for Azure OpenAI - add environment variables, and navigate to `models.py` and `utils.py` to change the models being used.
-
-These steps may vary depending on the specific model you are choosing to use.
+The notebooks you should use are in the notebooks folder.
