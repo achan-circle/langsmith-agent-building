@@ -35,7 +35,7 @@ $ jupyter notebook
 
 If you are using AzureOpenAI instead of OpenAI, there are a few things you need to do.
 
-1. Set necessary environment variables in a .env file. Specifically, make sure you set
+1. Set necessary environment variables in a .env file. Specifically, make sure you add the following to your .env file
     - AZURE_OPENAI_API_KEY=
     - AZURE_OPENAI_ENDPOINT=
     - AZURE_OPENAI_API_VERSION=
@@ -50,6 +50,6 @@ If you are using AzureOpenAI instead of OpenAI, there are a few things you need 
 
 #### Other Model Instructions
 
-Follow similar instructions as for Azure OpenAI - update environment variables, and navigate to `models.py` and `utils.py` to change the models being used.
+Follow similar instructions as for Azure OpenAI - add environment variables, and navigate to `models.py` and `utils.py` to change the models being used.
 
 These steps may vary depending on the specific model you are choosing to use.
