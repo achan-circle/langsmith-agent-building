@@ -9,7 +9,7 @@ In this session, you will learn about the fundamentals of LangGraph through one 
 
 ### Clone the LangSmith Agent Building repo
 ```
-git clone https://github.com/achan/langsmith-agent-building
+git clone https://github.com/achan-circle/langsmith-agent-building
 ```
 
 ### Install pip and python - skip if already installed
